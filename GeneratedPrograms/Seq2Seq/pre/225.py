@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int, input().split()))
+a.sort()
+a.sort()
+b.sort()
+print(max(a.values())- a.count(1))

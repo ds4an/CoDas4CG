@@ -1,0 +1,5 @@
+n = int(input())
+a = sorted(list(map(int, input().split())))
+n = int(input())
+a += sorted(map(int, input().split()))
+a.sort()

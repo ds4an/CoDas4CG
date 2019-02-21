@@ -1,0 +1,17 @@
+n, n = map(int, input().split())
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+tasks = list(map(int, input().split()))
+ans = 0
+for i in range(n):
