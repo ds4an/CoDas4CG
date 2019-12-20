@@ -1,0 +1,322 @@
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gpuarray/dnn.py:135: UserWarning: Your cuDNN version is more recent than Theano. If you encounter problems, try updating Theano or downgrading cuDNN to version 5.1.
+  warnings.warn("Your cuDNN version is more recent than "
+Using cuDNN version 6021 on context None
+Mapped name None to device cuda1: TITAN Xp (0000:81:00.0)
+10/15/2018 14:20:51 [INFO] generic_utils: init logging file [runs/parser.log]
+10/15/2018 14:20:51 [INFO] code_gen: command line: code_gen.py -data_type django -data data//hs.freq1.max_action350.pre_suf.unary_closure.bin -output_dir runs -batch_size 7 -max_epoch 200 -valid_per_batch 900000000 -save_per_batch 180 -decode_max_time_step 500 -optimizer adam -rule_embed_dim 256 -node_embed_dim 256 -valid_metric bleu train
+10/15/2018 14:20:51 [INFO] code_gen: loading dataset [data//hs.freq1.max_action350.pre_suf.unary_closure.bin]
+10/15/2018 14:22:09 [INFO] code_gen: current config: Namespace(attention_hidden_dim=100, batch_size=7, beam_size=5, clip_grad=0.0, data='data//hs.freq1.max_action350.pre_suf.unary_closure.bin', data_type='django', decode_max_time_step=500, decoder_hidden_dim=256, dropout=0.4, enable_copy=True, encoder='bilstm', encoder_hidden_dim=256, frontier_node_type_feed=True, head_nt_constraint=True, ifttt_test_split='data/ifff.test_data.gold.id', max_epoch=200, max_query_length=430, model=None, node_embed_dim=256, node_num=108, operation='train', optimizer='adam', output_dir='runs', parent_action_feed=True, parent_hidden_state_feed=True, ptrnet_hidden_dim=100, random_seed=181783, rule_embed_dim=256, rule_num=3410, save_per_batch=180, source_vocab_size=5001, target_vocab_size=5001, train_patience=3, tree_attention=False, valid_metric='bleu', valid_per_batch=900000000, word_embed_dim=300)
+10/15/2018 14:22:09 [INFO] code_gen: avg_action_num: 306
+10/15/2018 14:22:09 [INFO] code_gen: grammar rule num.: 3410
+10/15/2018 14:22:09 [INFO] code_gen: grammar node type num.: 108
+10/15/2018 14:22:09 [INFO] code_gen: source vocab size: 5001
+10/15/2018 14:22:09 [INFO] code_gen: target vocab size: 5001
+10/15/2018 14:22:10 [INFO] recurrent: applying dropout with p = 0.400000
+10/15/2018 14:22:10 [INFO] recurrent: applying dropout with p = 0.400000
+10/15/2018 14:22:10 [INFO] components: applying dropout with p = 0.400000
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p4
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p10
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p16
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p22
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p29
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p30
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p31
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p32
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:539: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: decoder_lstm_p33
+  handle_disconnected(elem)
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gradient.py:565: UserWarning: grad method was asked to compute the gradient with respect to a variable that is not part of the computational graph of the cost, or is used only by a non-differentiable operator: <DisconnectedType>
+  handle_disconnected(rval[i])
+10/15/2018 14:25:58 [INFO] model: building decoder ...
+10/15/2018 14:25:58 [INFO] recurrent: applying dropout with p = 0.400000
+10/15/2018 14:25:58 [INFO] recurrent: applying dropout with p = 0.400000
+10/15/2018 14:25:58 [INFO] components: applying dropout with p = 0.400000
+10/15/2018 14:26:32 [INFO] learner: initial learner with training set [hs.train_data] (13588 examples)
+10/15/2018 14:26:32 [INFO] learner: validation set [hs.dev_data] (1277 examples)
+10/15/2018 14:26:32 [INFO] learner: begin training
+10/15/2018 14:32:41 [INFO] model: save model to [runs/model.iter180]
+10/15/2018 14:39:00 [INFO] model: save model to [runs/model.iter360]
+10/15/2018 14:45:05 [INFO] model: save model to [runs/model.iter540]
+10/15/2018 14:51:11 [INFO] model: save model to [runs/model.iter720]
+10/15/2018 14:57:37 [INFO] model: save model to [runs/model.iter900]
+10/15/2018 15:04:10 [INFO] model: save model to [runs/model.iter1080]
+10/15/2018 15:10:39 [INFO] model: save model to [runs/model.iter1260]
+10/15/2018 15:17:19 [INFO] model: save model to [runs/model.iter1440]
+10/15/2018 15:24:22 [INFO] model: save model to [runs/model.iter1620]
+10/15/2018 15:32:11 [INFO] model: save model to [runs/model.iter1800]
+10/15/2018 15:37:58 [INFO] learner: [Epoch 0] cumulative loss = 285.673707, (took 4286s)
+10/15/2018 15:39:31 [INFO] model: save model to [runs/model.iter1980]
+10/15/2018 15:46:48 [INFO] model: save model to [runs/model.iter2160]
+10/15/2018 15:53:46 [INFO] model: save model to [runs/model.iter2340]
+10/15/2018 16:00:15 [INFO] model: save model to [runs/model.iter2520]
+10/15/2018 16:06:29 [INFO] model: save model to [runs/model.iter2700]
+10/15/2018 16:12:34 [INFO] model: save model to [runs/model.iter2880]
+10/15/2018 16:18:50 [INFO] model: save model to [runs/model.iter3060]
+10/15/2018 16:25:16 [INFO] model: save model to [runs/model.iter3240]
+10/15/2018 16:32:30 [INFO] model: save model to [runs/model.iter3420]
+10/15/2018 16:40:05 [INFO] model: save model to [runs/model.iter3600]
+10/15/2018 16:48:00 [INFO] model: save model to [runs/model.iter3780]
+10/15/2018 16:52:40 [INFO] learner: [Epoch 1] cumulative loss = 198.134998, (took 4481s)
+10/15/2018 16:55:38 [INFO] model: save model to [runs/model.iter3960]
+10/15/2018 17:02:05 [INFO] model: save model to [runs/model.iter4140]
+10/15/2018 17:08:13 [INFO] model: save model to [runs/model.iter4320]
+10/15/2018 17:14:35 [INFO] model: save model to [runs/model.iter4500]
+10/15/2018 17:20:49 [INFO] model: save model to [runs/model.iter4680]
+10/15/2018 17:26:58 [INFO] model: save model to [runs/model.iter4860]
+10/15/2018 17:33:13 [INFO] model: save model to [runs/model.iter5040]
+10/15/2018 17:39:25 [INFO] model: save model to [runs/model.iter5220]
+10/15/2018 17:46:03 [INFO] model: save model to [runs/model.iter5400]
+10/15/2018 17:52:39 [INFO] model: save model to [runs/model.iter5580]
+10/15/2018 17:59:08 [INFO] model: save model to [runs/model.iter5760]
+10/15/2018 18:01:42 [INFO] learner: [Epoch 2] cumulative loss = 179.966342, (took 4141s)
+10/15/2018 18:06:09 [INFO] model: save model to [runs/model.iter5940]
+10/15/2018 18:12:50 [INFO] model: save model to [runs/model.iter6120]
+10/15/2018 18:19:32 [INFO] model: save model to [runs/model.iter6300]
+10/15/2018 18:26:28 [INFO] model: save model to [runs/model.iter6480]
+10/15/2018 18:32:56 [INFO] model: save model to [runs/model.iter6660]
+10/15/2018 18:39:36 [INFO] model: save model to [runs/model.iter6840]
+10/15/2018 18:46:07 [INFO] model: save model to [runs/model.iter7020]
+10/15/2018 18:52:35 [INFO] model: save model to [runs/model.iter7200]
+10/15/2018 18:59:07 [INFO] model: save model to [runs/model.iter7380]
+10/15/2018 19:05:52 [INFO] model: save model to [runs/model.iter7560]
+10/15/2018 19:12:18 [INFO] model: save model to [runs/model.iter7740]
+10/15/2018 19:13:14 [INFO] learner: [Epoch 3] cumulative loss = 164.929535, (took 4291s)
+10/15/2018 19:18:25 [INFO] model: save model to [runs/model.iter7920]
+10/15/2018 19:24:31 [INFO] model: save model to [runs/model.iter8100]
+10/15/2018 19:30:42 [INFO] model: save model to [runs/model.iter8280]
+10/15/2018 19:36:49 [INFO] model: save model to [runs/model.iter8460]
+10/15/2018 19:42:55 [INFO] model: save model to [runs/model.iter8640]
+10/15/2018 19:49:07 [INFO] model: save model to [runs/model.iter8820]
+10/15/2018 19:55:15 [INFO] model: save model to [runs/model.iter9000]
+10/15/2018 20:01:23 [INFO] model: save model to [runs/model.iter9180]
+10/15/2018 20:07:35 [INFO] model: save model to [runs/model.iter9360]
+10/15/2018 20:13:45 [INFO] model: save model to [runs/model.iter9540]
+10/15/2018 20:19:21 [INFO] learner: [Epoch 4] cumulative loss = 152.950987, (took 3967s)
+10/15/2018 20:19:42 [INFO] model: save model to [runs/model.iter9720]
+10/15/2018 20:25:50 [INFO] model: save model to [runs/model.iter9900]
+10/15/2018 20:32:14 [INFO] model: save model to [runs/model.iter10080]
+10/15/2018 20:38:33 [INFO] model: save model to [runs/model.iter10260]
+10/15/2018 20:44:47 [INFO] model: save model to [runs/model.iter10440]
+10/15/2018 20:50:51 [INFO] model: save model to [runs/model.iter10620]
+10/15/2018 20:57:06 [INFO] model: save model to [runs/model.iter10800]
+10/15/2018 21:03:21 [INFO] model: save model to [runs/model.iter10980]
+10/15/2018 21:09:37 [INFO] model: save model to [runs/model.iter11160]
+10/15/2018 21:15:42 [INFO] model: save model to [runs/model.iter11340]
+10/15/2018 21:21:53 [INFO] model: save model to [runs/model.iter11520]
+10/15/2018 21:26:21 [INFO] learner: [Epoch 5] cumulative loss = 143.392787, (took 4019s)
+10/15/2018 21:28:02 [INFO] model: save model to [runs/model.iter11700]
+10/15/2018 21:34:22 [INFO] model: save model to [runs/model.iter11880]
+10/15/2018 21:41:46 [INFO] model: save model to [runs/model.iter12060]
+10/15/2018 21:49:05 [INFO] model: save model to [runs/model.iter12240]
+10/15/2018 21:57:17 [INFO] model: save model to [runs/model.iter12420]
+10/15/2018 22:05:39 [INFO] model: save model to [runs/model.iter12600]
+10/15/2018 22:12:51 [INFO] model: save model to [runs/model.iter12780]
+10/15/2018 22:18:54 [INFO] model: save model to [runs/model.iter12960]
+10/15/2018 22:25:00 [INFO] model: save model to [runs/model.iter13140]
+10/15/2018 22:31:08 [INFO] model: save model to [runs/model.iter13320]
+10/15/2018 22:37:26 [INFO] model: save model to [runs/model.iter13500]
+10/15/2018 22:40:48 [INFO] learner: [Epoch 6] cumulative loss = 135.262925, (took 4467s)
+10/15/2018 22:43:49 [INFO] model: save model to [runs/model.iter13680]
+10/15/2018 22:49:53 [INFO] model: save model to [runs/model.iter13860]
+10/15/2018 22:56:05 [INFO] model: save model to [runs/model.iter14040]
+10/15/2018 23:02:27 [INFO] model: save model to [runs/model.iter14220]
+10/15/2018 23:08:59 [INFO] model: save model to [runs/model.iter14400]
+10/15/2018 23:15:43 [INFO] model: save model to [runs/model.iter14580]
+10/15/2018 23:22:33 [INFO] model: save model to [runs/model.iter14760]
+10/15/2018 23:29:21 [INFO] model: save model to [runs/model.iter14940]
+10/15/2018 23:36:08 [INFO] model: save model to [runs/model.iter15120]
+10/15/2018 23:43:04 [INFO] model: save model to [runs/model.iter15300]
+10/15/2018 23:49:56 [INFO] model: save model to [runs/model.iter15480]
+10/15/2018 23:52:04 [INFO] learner: [Epoch 7] cumulative loss = 128.888075, (took 4276s)
+10/15/2018 23:56:51 [INFO] model: save model to [runs/model.iter15660]
+10/16/2018 00:03:42 [INFO] model: save model to [runs/model.iter15840]
+10/16/2018 00:10:31 [INFO] model: save model to [runs/model.iter16020]
+10/16/2018 00:17:06 [INFO] model: save model to [runs/model.iter16200]
+10/16/2018 00:23:46 [INFO] model: save model to [runs/model.iter16380]
+10/16/2018 00:30:20 [INFO] model: save model to [runs/model.iter16560]
+10/16/2018 00:37:08 [INFO] model: save model to [runs/model.iter16740]
+10/16/2018 00:43:23 [INFO] model: save model to [runs/model.iter16920]
+10/16/2018 00:49:41 [INFO] model: save model to [runs/model.iter17100]
+10/16/2018 00:55:54 [INFO] model: save model to [runs/model.iter17280]
+10/16/2018 01:02:37 [INFO] model: save model to [runs/model.iter17460]
+10/16/2018 01:03:17 [INFO] learner: [Epoch 8] cumulative loss = 123.367726, (took 4272s)
+10/16/2018 01:09:30 [INFO] model: save model to [runs/model.iter17640]
+10/16/2018 01:16:22 [INFO] model: save model to [runs/model.iter17820]
+10/16/2018 01:23:18 [INFO] model: save model to [runs/model.iter18000]
+10/16/2018 01:29:59 [INFO] model: save model to [runs/model.iter18180]
+10/16/2018 01:36:26 [INFO] model: save model to [runs/model.iter18360]
+10/16/2018 01:43:04 [INFO] model: save model to [runs/model.iter18540]
+10/16/2018 01:49:45 [INFO] model: save model to [runs/model.iter18720]
+10/16/2018 01:56:14 [INFO] model: save model to [runs/model.iter18900]
+10/16/2018 02:03:02 [INFO] model: save model to [runs/model.iter19080]
+10/16/2018 02:09:59 [INFO] model: save model to [runs/model.iter19260]
+10/16/2018 02:15:57 [INFO] learner: [Epoch 9] cumulative loss = 118.485566, (took 4360s)
+10/16/2018 02:16:45 [INFO] model: save model to [runs/model.iter19440]
+10/16/2018 02:23:20 [INFO] model: save model to [runs/model.iter19620]
+10/16/2018 02:30:04 [INFO] model: save model to [runs/model.iter19800]
+10/16/2018 02:36:52 [INFO] model: save model to [runs/model.iter19980]
+10/16/2018 02:43:35 [INFO] model: save model to [runs/model.iter20160]
+10/16/2018 02:50:31 [INFO] model: save model to [runs/model.iter20340]
+10/16/2018 02:57:13 [INFO] model: save model to [runs/model.iter20520]
+10/16/2018 03:03:49 [INFO] model: save model to [runs/model.iter20700]
+10/16/2018 03:10:40 [INFO] model: save model to [runs/model.iter20880]
+10/16/2018 03:17:46 [INFO] model: save model to [runs/model.iter21060]
+10/16/2018 03:24:43 [INFO] model: save model to [runs/model.iter21240]
+10/16/2018 03:29:21 [INFO] learner: [Epoch 10] cumulative loss = 114.300823, (took 4403s)
+10/16/2018 03:31:28 [INFO] model: save model to [runs/model.iter21420]
+10/16/2018 03:37:58 [INFO] model: save model to [runs/model.iter21600]
+10/16/2018 03:44:36 [INFO] model: save model to [runs/model.iter21780]
+10/16/2018 03:51:23 [INFO] model: save model to [runs/model.iter21960]
+10/16/2018 03:58:28 [INFO] model: save model to [runs/model.iter22140]
+10/16/2018 04:05:28 [INFO] model: save model to [runs/model.iter22320]
+10/16/2018 04:12:07 [INFO] model: save model to [runs/model.iter22500]
+10/16/2018 04:18:56 [INFO] model: save model to [runs/model.iter22680]
+10/16/2018 04:26:02 [INFO] model: save model to [runs/model.iter22860]
+10/16/2018 04:33:07 [INFO] model: save model to [runs/model.iter23040]
+10/16/2018 04:40:10 [INFO] model: save model to [runs/model.iter23220]
+10/16/2018 04:43:25 [INFO] learner: [Epoch 11] cumulative loss = 110.392134, (took 4444s)
+10/16/2018 04:47:16 [INFO] model: save model to [runs/model.iter23400]
+10/16/2018 04:54:18 [INFO] model: save model to [runs/model.iter23580]
+10/16/2018 05:01:17 [INFO] model: save model to [runs/model.iter23760]
+10/16/2018 05:08:31 [INFO] model: save model to [runs/model.iter23940]
+10/16/2018 05:15:36 [INFO] model: save model to [runs/model.iter24120]
+10/16/2018 05:22:32 [INFO] model: save model to [runs/model.iter24300]
+10/16/2018 05:29:23 [INFO] model: save model to [runs/model.iter24480]
+10/16/2018 05:36:13 [INFO] model: save model to [runs/model.iter24660]
+10/16/2018 05:43:16 [INFO] model: save model to [runs/model.iter24840]
+10/16/2018 05:50:24 [INFO] model: save model to [runs/model.iter25020]
+10/16/2018 05:57:36 [INFO] model: save model to [runs/model.iter25200]
+10/16/2018 05:59:21 [INFO] learner: [Epoch 12] cumulative loss = 107.234916, (took 4555s)
+10/16/2018 06:04:31 [INFO] model: save model to [runs/model.iter25380]
+10/16/2018 06:11:52 [INFO] model: save model to [runs/model.iter25560]
+10/16/2018 06:19:02 [INFO] model: save model to [runs/model.iter25740]
+10/16/2018 06:26:08 [INFO] model: save model to [runs/model.iter25920]
+10/16/2018 06:33:18 [INFO] model: save model to [runs/model.iter26100]
+10/16/2018 06:40:35 [INFO] model: save model to [runs/model.iter26280]
+10/16/2018 06:47:42 [INFO] model: save model to [runs/model.iter26460]
+10/16/2018 06:54:45 [INFO] model: save model to [runs/model.iter26640]
+10/16/2018 07:01:56 [INFO] model: save model to [runs/model.iter26820]
+10/16/2018 07:09:11 [INFO] model: save model to [runs/model.iter27000]
+10/16/2018 07:16:31 [INFO] model: save model to [runs/model.iter27180]
+10/16/2018 07:16:51 [INFO] learner: [Epoch 13] cumulative loss = 104.266841, (took 4650s)
+10/16/2018 07:24:07 [INFO] model: save model to [runs/model.iter27360]
+10/16/2018 07:31:42 [INFO] model: save model to [runs/model.iter27540]
+10/16/2018 07:39:05 [INFO] model: save model to [runs/model.iter27720]
+10/16/2018 07:46:18 [INFO] model: save model to [runs/model.iter27900]
+10/16/2018 07:53:04 [INFO] model: save model to [runs/model.iter28080]
+10/16/2018 07:59:48 [INFO] model: save model to [runs/model.iter28260]
+10/16/2018 08:06:22 [INFO] model: save model to [runs/model.iter28440]
+10/16/2018 08:13:08 [INFO] model: save model to [runs/model.iter28620]
+10/16/2018 08:20:01 [INFO] model: save model to [runs/model.iter28800]
+10/16/2018 08:27:01 [INFO] model: save model to [runs/model.iter28980]
+10/16/2018 08:32:38 [INFO] learner: [Epoch 14] cumulative loss = 101.651888, (took 4546s)
+10/16/2018 08:33:43 [INFO] model: save model to [runs/model.iter29160]
+10/16/2018 08:40:25 [INFO] model: save model to [runs/model.iter29340]
+10/16/2018 08:47:01 [INFO] model: save model to [runs/model.iter29520]
+10/16/2018 08:53:54 [INFO] model: save model to [runs/model.iter29700]
+10/16/2018 09:01:11 [INFO] model: save model to [runs/model.iter29880]
+10/16/2018 09:08:22 [INFO] model: save model to [runs/model.iter30060]
+10/16/2018 09:15:36 [INFO] model: save model to [runs/model.iter30240]
+10/16/2018 09:23:16 [INFO] model: save model to [runs/model.iter30420]
+10/16/2018 09:30:04 [INFO] model: save model to [runs/model.iter30600]
+10/16/2018 09:36:40 [INFO] model: save model to [runs/model.iter30780]
+10/16/2018 09:43:19 [INFO] model: save model to [runs/model.iter30960]
+10/16/2018 09:47:27 [INFO] learner: [Epoch 15] cumulative loss = 99.213403, (took 4488s)
+10/16/2018 09:49:55 [INFO] model: save model to [runs/model.iter31140]
+10/16/2018 09:56:35 [INFO] model: save model to [runs/model.iter31320]
+10/16/2018 10:03:06 [INFO] model: save model to [runs/model.iter31500]
+10/16/2018 10:09:37 [INFO] model: save model to [runs/model.iter31680]
+10/16/2018 10:16:01 [INFO] model: save model to [runs/model.iter31860]
+10/16/2018 10:23:29 [INFO] model: save model to [runs/model.iter32040]
+10/16/2018 10:30:06 [INFO] model: save model to [runs/model.iter32220]
+10/16/2018 10:36:36 [INFO] model: save model to [runs/model.iter32400]
+10/16/2018 10:42:47 [INFO] model: save model to [runs/model.iter32580]
+10/16/2018 10:49:47 [INFO] model: save model to [runs/model.iter32760]
+10/16/2018 10:57:52 [INFO] model: save model to [runs/model.iter32940]
+10/16/2018 11:01:11 [INFO] learner: [Epoch 16] cumulative loss = 97.006760, (took 4424s)
+10/16/2018 11:05:55 [INFO] model: save model to [runs/model.iter33120]
+10/16/2018 11:12:49 [INFO] model: save model to [runs/model.iter33300]
+10/16/2018 11:19:41 [INFO] model: save model to [runs/model.iter33480]
+10/16/2018 11:26:38 [INFO] model: save model to [runs/model.iter33660]
+10/16/2018 11:33:32 [INFO] model: save model to [runs/model.iter33840]
+10/16/2018 11:40:23 [INFO] model: save model to [runs/model.iter34020]
+10/16/2018 11:47:19 [INFO] model: save model to [runs/model.iter34200]
+10/16/2018 11:53:53 [INFO] model: save model to [runs/model.iter34380]
+10/16/2018 12:00:16 [INFO] model: save model to [runs/model.iter34560]
+10/16/2018 12:06:54 [INFO] model: save model to [runs/model.iter34740]
+10/16/2018 12:13:37 [INFO] model: save model to [runs/model.iter34920]
+10/16/2018 12:15:02 [INFO] learner: [Epoch 17] cumulative loss = 95.032797, (took 4431s)
+10/16/2018 12:20:33 [INFO] model: save model to [runs/model.iter35100]
+10/16/2018 12:27:16 [INFO] model: save model to [runs/model.iter35280]
+10/16/2018 12:33:55 [INFO] model: save model to [runs/model.iter35460]
+10/16/2018 12:40:40 [INFO] model: save model to [runs/model.iter35640]
+10/16/2018 12:47:35 [INFO] model: save model to [runs/model.iter35820]
+10/16/2018 12:53:58 [INFO] model: save model to [runs/model.iter36000]
+10/16/2018 13:00:13 [INFO] model: save model to [runs/model.iter36180]
+10/16/2018 13:06:46 [INFO] model: save model to [runs/model.iter36360]
+10/16/2018 13:13:06 [INFO] model: save model to [runs/model.iter36540]
+10/16/2018 13:19:10 [INFO] model: save model to [runs/model.iter36720]
+10/16/2018 13:25:58 [INFO] learner: [Epoch 18] cumulative loss = 93.136489, (took 4256s)
+10/16/2018 13:26:03 [INFO] model: save model to [runs/model.iter36900]
+10/16/2018 13:32:39 [INFO] model: save model to [runs/model.iter37080]
+10/16/2018 13:39:13 [INFO] model: save model to [runs/model.iter37260]
+10/16/2018 13:46:01 [INFO] model: save model to [runs/model.iter37440]
+10/16/2018 13:53:19 [INFO] model: save model to [runs/model.iter37620]
+10/16/2018 14:01:24 [INFO] model: save model to [runs/model.iter37800]
+10/16/2018 14:09:18 [INFO] model: save model to [runs/model.iter37980]
+Traceback (most recent call last):
+  File "code_gen.py", line 164, in <module>
+    learner.train()
+  File "/home1/zjq/try3/NL2code-master2/learner.py", line 83, in train
+    train_func_outputs = self.model.train_func(*inputs)
+  File "/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/compile/function_module.py", line 884, in __call__
+    self.fn() if output_subset is None else\
+  File "/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/scan_module/scan_op.py", line 989, in rval
+    r = p(n, [x[0] for x in i], o)
+  File "/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/scan_module/scan_op.py", line 978, in p
+    self, node)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gof/cmodule.py", line 1438, in clear_unversioned
+    open(fname).close()
+  File "/home/user/anaconda2/envs/tensorflow/lib/python3.6/codecs.py", line 308, in __init__
+    def __init__(self, errors='strict'):
+KeyboardInterrupt
+/home/user/anaconda2/envs/tensorflow/lib/python3.6/site-packages/theano/gpuarray/dnn.py:135: UserWarning: Your cuDNN version is more recent than Theano. If you encounter problems, try updating Theano or downgrading cuDNN to version 5.1.
+  warnings.warn("Your cuDNN version is more recent than "
+Using cuDNN version 6021 on context None
+Mapped name None to device cuda1: TITAN Xp (0000:81:00.0)
+10/16/2018 14:15:29 [INFO] generic_utils: init logging file [runs/parser.log]
+10/16/2018 14:15:29 [INFO] code_gen: command line: code_gen.py -data_type django -data data//hs.freq1.max_action350.pre_suf.unary_closure.bin -output_dir runs -model runs/model.best_bleu.npz -batch_size 7 -max_epoch 200 -valid_per_batch 900000000 -save_per_batch 180 -decode_max_time_step 500 -optimizer adam -rule_embed_dim 256 -node_embed_dim 256 -valid_metric bleu decode -saveto runs/model.best_bleu.npz.decode_results.test.bin
+10/16/2018 14:15:29 [INFO] code_gen: loading dataset [data//hs.freq1.max_action350.pre_suf.unary_closure.bin]
+Traceback (most recent call last):
+  File "code_gen.py", line 126, in <module>
+    train_data, dev_data, test_data = deserialize_from_file(args.data)
+  File "/home1/zjq/try3/NL2code-master2/nn/utils/io_utils.py", line 84, in deserialize_from_file
+    obj = pickle.load(f)
+  File "/home1/zjq/try3/NL2code-master2/astnode.py", line 83, in __hash__
+    def __hash__(self):
+KeyboardInterrupt
+10/16/2018 14:17:04 [INFO] generic_utils: init logging file [runs/parser.log]
+10/16/2018 14:17:04 [INFO] code_gen: command line: code_gen.py -data_type django -data data//hs.freq1.max_action350.pre_suf.unary_closure.bin -output_dir runs evaluate -input runs/model.best_bleu.npz.decode_results.test.bin
+10/16/2018 14:17:04 [INFO] code_gen: loading dataset [data//hs.freq1.max_action350.pre_suf.unary_closure.bin]
+10/16/2018 14:18:14 [INFO] code_gen: current config: Namespace(attention_hidden_dim=100, batch_size=50, beam_size=5, clip_grad=0.0, data='data//hs.freq1.max_action350.pre_suf.unary_closure.bin', data_type='django', decode_max_time_step=500, decoder_hidden_dim=256, dropout=0.4, enable_copy=True, encoder='bilstm', encoder_hidden_dim=256, frontier_node_type_feed=True, head_nt_constraint=True, ifttt_test_split='data/ifff.test_data.gold.id', input='runs/model.best_bleu.npz.decode_results.test.bin', is_nbest=False, max_epoch=50, max_query_length=430, mode='self', model=None, node_embed_dim=256, node_num=108, operation='evaluate', optimizer='adam', output_dir='runs', parent_action_feed=True, parent_hidden_state_feed=True, ptrnet_hidden_dim=100, random_seed=181783, rule_embed_dim=256, rule_num=3410, save_per_batch=4000, seq2seq_decode_file=None, seq2seq_ref_file=None, seq2tree_id_file='test.id.txt', seq2tree_rareword_map=None, seq2tree_sample_file='model.sample', source_vocab_size=5001, target_vocab_size=5001, train_patience=3, tree_attention=False, type='test_data', valid_metric='bleu', valid_per_batch=4000, word_embed_dim=300)
+10/16/2018 14:18:14 [INFO] code_gen: avg_action_num: 306
+10/16/2018 14:18:14 [INFO] code_gen: grammar rule num.: 3410
+10/16/2018 14:18:14 [INFO] code_gen: grammar node type num.: 108
+10/16/2018 14:18:14 [INFO] code_gen: source vocab size: 5001
+10/16/2018 14:18:14 [INFO] code_gen: target vocab size: 5001
+Traceback (most recent call last):
+  File "code_gen.py", line 192, in <module>
+    decode_results = deserialize_from_file(decode_results_file)
+  File "/home1/zjq/try3/NL2code-master2/nn/utils/io_utils.py", line 83, in deserialize_from_file
+    f = open(path, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/model.best_bleu.npz.decode_results.test.bin'

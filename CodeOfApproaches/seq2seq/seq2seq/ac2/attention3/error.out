@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "sample.py", line 90, in <module>
+    managers = pkl.load( open("{}/map.pkl".format(args.data_dir), "rb" ) )
+  File "/home/user/anaconda2/envs/tensorflow-2.7/lib/python2.7/pickle.py", line 1384, in load
+    return Unpickler(file).load()
+  File "/home/user/anaconda2/envs/tensorflow-2.7/lib/python2.7/pickle.py", line 864, in load
+    dispatch[key](self)
+  File "/home/user/anaconda2/envs/tensorflow-2.7/lib/python2.7/pickle.py", line 892, in load_proto
+    raise ValueError, "unsupported pickle protocol: %d" % proto
+ValueError: unsupported pickle protocol: 3
