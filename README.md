@@ -6,7 +6,6 @@ If you are using the dataset, please cite the following paper: H. Liu, M. Shen, 
 
 There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproaches and GeneratedPrograms.
 
-/Compute contains the file to compute bleu
 
 /Dataset contains the programming tasks and their corresponding implementations in different programming languages. Each subfolder under /Datset corresponds to a single programming task. Notably, we do not include the commercial script to crawl data.
 
@@ -23,40 +22,52 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 
 ### How to use the database:
 
-sql			functions:
-				
-				RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
-				
-				RetrieveTask（ID）: Return the task description of the specified ID
-				
-				RetreiveImplementations（）：Return all codes, and each code corresponds to a python file.	
-				
-				RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.
-				
-				RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
-	
-#To original data
+#Retrieving original data
 1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
+
+    SQL: select question from question 
+2. RetrieveTask(ID): Return the task description of the specified ID   
+
+    SQL: select question from question where numId = ID
+3. RetreiveImplementations()：Return all codes, and each code corresponds to a python file.
+
+	SQL：select code from code
+4. RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.	 
+
+	SQL: select code from code where numId = ID
+
+#Retrieving processed data
+Processed data is the requirement description and source code obtained after preprocessing such as word segmentation and lowercase words.
+
+1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
+
     SQL: select question from process_question 
-2. RetrieveTask（ID）: Return the task description of the specified ID    
+2. RetrieveTask(ID): Return the task description of the specified ID   
+
     SQL: select question from process_question where numId = ID
-3. 
-					RetreiveImplementations（）:select code from process_implements 
-					RetreiveImplementations（ID）:select code from process_implements where numId = ID
-				#To processed data
-					RetrieveTasks():select process_question from process_question 
-					RetrieveTasks(ID): select process_question from process_question where numId = ID
-					RetreiveImplementations（）:select process_code from process_implements 
-					RetreiveImplementations（ID）:select process_code from process_implements where numId = ID
-				#To test cases
-					RetreiveTestCasess（ID）: select input,output from testcase where numId= ID
+3. RetreiveImplementations()：Return all codes, and each code corresponds to a python file.
 
-compute     functions:
+	SQL：select code from process_code
+4. RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.	 
 
-				ComputeBLEU（pred, refer）:Calculate the BLEU between the generated code pred and the reference code refer	
-				ComputeBLEU2（pred,refers）:Calculate the BLEU of code pred according to a series of refer	
-				hasCompilerErrors（File name）:Check whether the code has static detection and dynamic compilation errors	
-				PreProcessALL(File requirements， File implements): Return after preprocessing related requirements and codes	
-				PreProcessReq(File requirements， File implements): Return after preprocessing related requirements
-				PreProcessImp(File requirements， File implements): Return after preprocessing the relevant code	
+	SQL: select code from process_code where numId = ID
+
+RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
+
+	SQL:select input,output from testcase where numId= ID
+
+
+#  /Compute: This folder contains how to calculate the belu value between the source code, preprocessing code, and code to detect whether it contains compilation errors, etc.
+
+1.ComputeBLEU（pred, refer）: Calculate the BLEU between the generated code pred and the reference code refer	
+
+2.ComputeBLEU2（pred,refers）:Calculate the BLEU of code pred according to a series of refer	
+
+3.hasCompilerErrors（File name）:Check whether the code has static detection and dynamic compilation errors	
+
+4.PreProcessALL(File requirements， File implements): Return after preprocessing related requirements and codes	
+
+5.PreProcessReq(File requirements， File implements): Return after preprocessing related requirements
+				
+6.PreProcessImp(File requirements， File implements): Return after preprocessing the relevant code	
 
