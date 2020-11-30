@@ -19,9 +19,9 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 /CodeOfApproaches Implementation of evaluated approaches.
 
 
-#  /sql Database contains the whole dataset (Python only).
+#  /sql: This folder is composed of a databasethat contains the whole dataset (Python only).
 
-API for compute and sql:
+### How to use the database:
 
 sql			functions:
 				
@@ -35,9 +35,12 @@ sql			functions:
 				
 				RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
 	
-				#To original data
-					RetrieveTasks():select question from process_question 
-					RetrieveTasks(ID): select question from process_question where numId = ID
+#To original data
+1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
+    SQL: select question from process_question 
+2. RetrieveTask（ID）: Return the task description of the specified ID    
+    SQL: select question from process_question where numId = ID
+3. 
 					RetreiveImplementations（）:select code from process_implements 
 					RetreiveImplementations（ID）:select code from process_implements where numId = ID
 				#To processed data
