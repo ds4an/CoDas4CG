@@ -19,9 +19,7 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 /CodeOfApproaches Implementation of evaluated approaches.
 
 
-**/sql Database contains the whole dataset (Python only). **
-
-———
+<font color=red> /sql Database contains the whole dataset (Python only).</font>
 
 API for compute and sql:
 
