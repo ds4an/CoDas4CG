@@ -27,10 +27,15 @@ API for compute and sql:
 
 Location	method	
 sql			functions:
+				
 				RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
-				RetrieveTask（ID）: Return the task description of the specified ID	
+				
+				RetrieveTask（ID）: Return the task description of the specified ID
+				
 				RetreiveImplementations（）：Return all codes, and each code corresponds to a python file.	
-				RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.	
+				
+				RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.
+				
 				RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
 	
 				#To original data
