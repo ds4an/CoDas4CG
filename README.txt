@@ -1,6 +1,9 @@
 # CoDas4CG
 Contests based Dataset for Code Generation
 
+If you are using the dataset, please cite the following paper: H. Liu, M. Shen, J. Zhu, N. Niu, G. Li and L. Zhang, "Deep Learning Based Program Generation from Requirements Text: Are We There Yet?," in IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2020.3018481. Available at: https://ieeexplore.ieee.org/document/9173704
+
+
 There are Four folders: Dataset, TestCases, Tools and GeneratedPrograms.
 
 /Dataset contains the programming tasks and their corresponding implementations in different programming languages. Each subfolder under /Datset corresponds to a single programming task. Notably, we do not include the commercial script to crawl data.
