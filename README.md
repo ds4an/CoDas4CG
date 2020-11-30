@@ -25,7 +25,6 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 
 API for compute and sql:
 
-Location	method	
 sql			functions:
 				
 				RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
