@@ -1,15 +1,16 @@
 1、
-ComputeBLEU.py：包含ComputeBLEU和ComputeBLEU2两个函数
+ComputeBLEU.py：contains ComputeBLEU和ComputeBLEU2
 2、
-preprocess.py：包含PreProcessALL、PreProcessReq、PreProcessImp三个函数
+preprocess.py：contains PreProcessALL、PreProcessReq、PreProcessImp
 
 3、
 CompilerErrors.py
 
-必须先运行以下脚本（将生成代码的py文件放与脚本同目录，不得置放除生成代码以外的py文件）
-detect.sh :静态语法检测
-(使用动态检测之前将对应id的输入用例和输出用例文件放于pre文件夹下)
-run.sh:动态运行编译检测
-使用命令：
+The following script must be run first (put the py file of the generated code in the same directory as the script, and no py file other than the generated code must be placed)
+detect.sh :Static grammar checking
+(Before using dynamic detection, put the input use case and output use case files corresponding to the id under the pre folder)
+run.sh:Run compilation check dynamically
+
+Use the command:
 . detect.sh >resultE.txt
 . run.sh 2>resultR.txt
