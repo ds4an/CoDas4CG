@@ -32,11 +32,12 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 3. RetreiveImplementations()：Return all codes, and each code corresponds to a python file.
 
 	SQL：select code from code
-4. RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.	 
+4. RetreiveImplementations（ID）：Return all codes corresponding to the specified topic id, and each code corresponds to a python file.	 s
 
 	SQL: select code from code where numId = ID
 
 #Retrieving processed data
+
 Processed data is the requirement description and source code obtained after preprocessing such as word segmentation and lowercase words.
 
 1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
@@ -59,15 +60,15 @@ RetreiveTestCasess（ID）：Returns the test case corresponding to the specifie
 
 #  /Compute: This folder contains how to calculate the belu value between the source code, preprocessing code, and code to detect whether it contains compilation errors, etc.
 
-1.ComputeBLEU（pred, refer）: Calculate the BLEU between the generated code pred and the reference code refer	
+ 1.ComputeBLEU（pred, refer）: Calculate the BLEU between the generated code pred and the reference code refer	
 
-2.ComputeBLEU2（pred,refers）:Calculate the BLEU of code pred according to a series of refer	
+ 2.ComputeBLEU2（pred,refers）:Calculate the BLEU of code pred according to a series of refer	
 
-3.hasCompilerErrors（File name）:Check whether the code has static detection and dynamic compilation errors	
+ 3.hasCompilerErrors（File name）:Check whether the code has static detection and dynamic compilation errors	
 
-4.PreProcessALL(File requirements， File implements): Return after preprocessing related requirements and codes	
+ 4.PreProcessALL(File requirements， File implements): Return after preprocessing related requirements and codes	
 
-5.PreProcessReq(File requirements， File implements): Return after preprocessing related requirements
+ 5.PreProcessReq(File requirements， File implements): Return after preprocessing related requirements
 				
 6.PreProcessImp(File requirements， File implements): Return after preprocessing the relevant code	
 
