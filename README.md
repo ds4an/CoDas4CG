@@ -19,6 +19,7 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 
 
 #  /sql: This folder is composed of a database that contains the whole dataset (Python programs only).
+In case your approach is specially designed for Python, this database is strongly suggested for usage (compated to the /Dataset folder).
 
 ### How to use the database:
 
