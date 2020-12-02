@@ -18,11 +18,11 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 /CodeOfApproaches Implementation of evaluated approaches.
 
 
-#  /sql: This folder is composed of a databasethat contains the whole dataset (Python only).
+#  /sql: This folder is composed of a database that contains the whole dataset (Python programs only).
 
 ### How to use the database:
 
-#Retrieving original data
+#Retrieving original data (without preprocessing)
 1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
 
     SQL: select question from question 
@@ -36,9 +36,7 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 
 	SQL: select code from code where numId = ID
 
-#Retrieving processed data
-
-Processed data is the requirement description and source code obtained after preprocessing such as word segmentation and lowercase words.
+#Retrieving processed data (preprocessing includes  word segmentation and standarlization, et al.)
 
 1. RetrieveTasks(): Returns the description (requirements) of all tasks, each requirement is a text string
 
@@ -58,17 +56,17 @@ RetreiveTestCasess（ID）：Returns the test case corresponding to the specifie
 	SQL:select input,output from testcase where numId= ID
 
 
-#  /Compute: This folder contains how to calculate the belu value between the source code, preprocessing code, and code to detect whether it contains compilation errors, etc.
+#  /Compute: This folder contains tools to calculate the BLEU, and to detect compilation errors in generated programs.
 
- 1.ComputeBLEU（pred, refer）: Calculate the BLEU between the generated code pred and the reference code refer	
+ 1.ComputeBLEU（pred, refer）: Retrun  BLEU between the generated code pred and the reference code refer	
 
- 2.ComputeBLEU2（pred,refers）:Calculate the BLEU of code pred according to a series of refer	
+ 2.ComputeBLEU2（pred,refers）:Retrun  BLEU of code pred according to a series of refer	
 
- 3.hasCompilerErrors（File name）:Check whether the code has static detection and dynamic compilation errors	
+ 3.hasCompilerErrors（File name）:Check whether the code has static  and dynamic compilation errors	
 
- 4.PreProcessALL(File requirements， File implements): Return after preprocessing related requirements and codes	
+ 4.PreProcessALL(File requirements， File implements): Preprocess related requirements and programs	
 
- 5.PreProcessReq(File requirements， File implements): Return after preprocessing related requirements
+ 5.PreProcessReq(File requirements， File implements): Preprocess requirements (tasks)
 				
-6.PreProcessImp(File requirements， File implements): Return after preprocessing the relevant code	
+6.PreProcessImp(File requirements， File implements): Preprocess the program	
 
