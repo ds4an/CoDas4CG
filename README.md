@@ -4,7 +4,7 @@ Contests based Dataset for Code Generation
 If you are using the dataset, please cite the following paper: H. Liu, M. Shen, J. Zhu, N. Niu, G. Li and L. Zhang, "Deep Learning Based Program Generation from Requirements Text: Are We There Yet?," in IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2020.3018481. Available at: https://ieeexplore.ieee.org/document/9173704
 
 
-There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproaches and GeneratedPrograms.
+There are Seven folders: AssistantTools , DatasetInSQL, Dataset, TestCases, Tools, CodeOfApproaches and GeneratedPrograms.
 
 
 /Dataset contains the programming tasks and their corresponding implementations in different programming languages. Each subfolder under /Datset corresponds to a single programming task. Notably, we do not include the commercial script to crawl data.
@@ -18,7 +18,7 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 /CodeOfApproaches Implementation of evaluated approaches.
 
 
-#  /sql: This folder is composed of a database that contains the whole dataset (Python programs only).
+#  /DatasetInSQL: This folder is composed of a database that contains the whole dataset (Python programs only).
 In case your approach is specially designed for Python, this database is strongly suggested for usage (compated to the /Dataset folder).
 
 ### How to use the database:
@@ -57,7 +57,7 @@ In case your approach is specially designed for Python, this database is strongl
 	SQL:select input,output from testcase where numId= ID
 
 
-#  /Compute: This folder contains tools to calculate the BLEU, and to detect compilation errors in generated programs.
+#  /AssistantTools: This folder contains tools to calculate the BLEU, and to detect compilation errors in generated programs.
 
  1.ComputeBLEU（pred, refer）: Retrun  BLEU between the generated code pred and the reference code refer	
 
