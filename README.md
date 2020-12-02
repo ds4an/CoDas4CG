@@ -51,7 +51,7 @@ There are Seven folders: Compute, sql, Dataset, TestCases, Tools, CodeOfApproach
 
 	SQL: select code from process_code where numId = ID
 
-RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
+5. RetreiveTestCasess（ID）：Returns the test case corresponding to the specified question id.
 
 	SQL:select input,output from testcase where numId= ID
 
