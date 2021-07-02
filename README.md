@@ -71,3 +71,6 @@ In case your approach is specially designed for Python, this database is strongl
 				
 6.PreProcessImp(File requirements， File implements): Preprocess the program	
 
+#  Copyright.
+
+You should get official permission from the authors for commercial use. 
